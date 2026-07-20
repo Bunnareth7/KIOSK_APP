@@ -75,6 +75,11 @@ flutter:
     - assets/images/china.svg
     - assets/images/promo2.png
     - assets/images/promo3.jpg
+    - assets/images/image-1.png
+    - assets/images/image-2.png
+    - assets/images/image.png
+    - assets/images/IconKio.svg
+    
   # icons:
     - assets/icons/ActionIcon.svg
     - assets/icons/Profile.svg
@@ -89,6 +94,10 @@ flutter:
     - assets/icons/jbc.png
     - assets/icons/khqr.svg
     - assets/icons/Arrow1.svg
+    - assets/icons/Language.svg
+    - assets/icons/IconKio-6.svg
+    - assets/icons/IconKio-5.svg
+    - assets/icons/IconKio.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -1,10 +1,9 @@
 import 'package:get/get.dart';
+import 'package:kiosk_app/app/modules/language/view/language_view.dart';
 import 'package:kiosk_app/app/modules/splash/view/splash.dart';
 import 'package:kiosk_app/app/modules/start_order/view/start_order.dart';
 
 import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
@@ -41,13 +40,8 @@ class AppPages {
       page: () => const SelectionTerminalView(),
       binding: SelectTerminalBinding(),
     ),
-    GetPage(
-      name: _Paths.SPLASH,
-      page: () => const SplashView(),
-    ),
-    GetPage(
-      name: _Paths.START_ORDER,
-      page: () => const StartOrderView(),
-    ),
+    GetPage(name: _Paths.SPLASH, page: () => const SplashView()),
+    GetPage(name: _Paths.START_ORDER, page: () => const StartOrderView()),
+    GetPage(name: _Paths.LANGUAGE, page: () => const LanguageView()),
   ];
 }

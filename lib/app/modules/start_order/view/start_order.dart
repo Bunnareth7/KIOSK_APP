@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:kiosk_app/app/modules/home/views/home_view.dart';
+import 'package:kiosk_app/app/routes/app_pages.dart';
 
 class StartOrderView extends StatefulWidget {
   const StartOrderView({super.key});
-
+ static void open() => Get.toNamed(Routes.START_ORDER);
   @override
   State<StartOrderView> createState() => _StartOrderViewState();
 }
@@ -106,7 +110,6 @@ class _StartOrderViewState extends State<StartOrderView> {
       ),
     );
   }
-  
   Widget _buildBottomSection() {
     return SingleChildScrollView(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
@@ -131,7 +134,7 @@ class _StartOrderViewState extends State<StartOrderView> {
                   label: 'Dine In',
                   imagePath: 'assets/images/overflow_koi.svg',
                   onTap: () {
-                    //
+                    HomeView.open();
                   },
                 ),
               ),
@@ -142,6 +145,7 @@ class _StartOrderViewState extends State<StartOrderView> {
                   imagePath: 'assets/images/overflow_driver.svg',
                   onTap: () {
                     //
+                    HomeView.open();
                   },
                 ),
               ),
@@ -179,7 +183,7 @@ class _StartOrderViewState extends State<StartOrderView> {
         const SizedBox(width: 6),
         Text(
           label,
-          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+          style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
         ),
       ],
     );

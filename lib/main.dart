@@ -14,10 +14,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Kiosk App',
       //initialRoute: Routes.LOGIN,
-     // initialRoute: Routes.SPLASH,
-     initialRoute: Routes.START_ORDER,
+     initialRoute: Routes.SPLASH,
+     //initialRoute: Routes.START_ORDER,
      //initialRoute: Routes.HOME,
      //initialRoute: Routes.SELECT_TERMINAL,
+     //initialRoute: Routes.LANGUAGE,
        // Set initial route
       getPages: AppPages.routes,
       debugShowCheckedModeBanner: false,

@@ -8,6 +8,7 @@ abstract class Routes {
   static const SELECT_TERMINAL = _Paths.SELECT_TERMINAL;
   static final SPLASH = _Paths.SPLASH;
   static const START_ORDER = _Paths.START_ORDER;
+  static const LANGUAGE = _Paths.LANGUAGE;
 
 }
 
@@ -18,4 +19,5 @@ abstract class _Paths {
   static const SELECT_TERMINAL = '/select-terminal';
  static const SPLASH = '/splash';
   static const START_ORDER = '/start-order';
+  static const LANGUAGE = '/language';
 }

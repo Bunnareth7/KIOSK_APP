@@ -1,23 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:kiosk_app/app/modules/start_order/view/start_order.dart';
+import 'package:kiosk_app/app/routes/app_pages.dart';
 import 'package:kiosk_app/app/theme/app_color.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
-
+ static void open() => Get.offNamed(Routes.LOGIN);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-         
-      ),
+     
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Row(
+                children: [
+                  
+                  SizedBox(width: 10, height: 10,),
+                  SvgPicture.asset(
+                  'assets/icons/Arrow1.svg',),
+                  Spacer(),
+                  Text("Login",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
+                  SizedBox(width: 10),
+                ],
+              ),
               const SizedBox(height: 20),
               SizedBox(
                 width: double.infinity,
@@ -48,10 +59,10 @@ class LoginView extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(height: 6),
+                      const SizedBox(height: 4),
                       const Text(
                         "Login your cloud account",
-                        style: TextStyle(fontSize: 16, color: Colors.black),
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
                       ),
         
                       const SizedBox(height: 10),
@@ -87,7 +98,6 @@ class LoginView extends StatelessWidget {
                           ),
                         ),
                       ),
-        
                       Padding(
                         padding: const EdgeInsets.only(
                           top: 20,
@@ -133,20 +143,25 @@ class LoginView extends StatelessWidget {
                       // Login Button
                       Padding(
                         padding: const EdgeInsets.only(left: 20, right: 20),
-                        child: Container(
-                          width: double.infinity,
-                          height: 45,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
-                            color : AppColor.mainprimarykoi,
-                          ),
-                          child: const Center(
-                            child: Text(
-                              "Login",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                        child: GestureDetector(
+                          onTap:() {
+                            StartOrderView.open();
+                          },
+                          child: Container(
+                            width: double.infinity,
+                            height: 45,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              color : AppColor.mainprimarykoi,
+                            ),
+                            child: const Center(
+                              child: Text(
+                                "Login",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
                               ),
                             ),
                           ),
