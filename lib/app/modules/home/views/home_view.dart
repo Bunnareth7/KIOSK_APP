@@ -116,7 +116,7 @@ class HomeView extends GetView<HomeController> {
                       style: TextStyle(
                         fontSize: 10,
                         color: isSelected
-                            ? const Color(0xFFF9A825)
+                            ? const Color(0xFFF89830)
                             : Colors.grey,
                         fontWeight: isSelected
                             ? FontWeight.bold
