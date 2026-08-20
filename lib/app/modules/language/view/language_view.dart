@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:kiosk_app/app/modules/login/views/login_view.dart';
-import 'package:kiosk_app/app/modules/start_order/view/start_order.dart';
 import 'package:kiosk_app/app/routes/app_pages.dart';
 
 class LanguageView extends StatelessWidget {
